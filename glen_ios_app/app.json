@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "glen_ios_app",
+    "slug": "glen_ios_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSHealthShareUsageDescription": "Glen Health needs to read your Health data to track calories.",
+        "NSHealthUpdateUsageDescription": "Glen Health needs permission to write Health data.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "glen"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Glen Health to access your camera to snap meals."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Glen Health to access your photos."
+        }
+      ]
+    ],
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "792ec633-4a59-4216-8c33-957a999990e0"
+      }
+    }
+  }
+}
